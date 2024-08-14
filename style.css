@@ -208,195 +208,108 @@ body {
   }
        
   /*Estilo de la cabecera para la presentacion*/
-  /* Estilo general y reset */
-*, ::before, ::after {
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x: ;
-  --tw-pan-y: ;
-  --tw-pinch-zoom: ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal: ;
-  --tw-slashed-zero: ;
-  --tw-numeric-figure: ;
-  --tw-numeric-spacing: ;
-  --tw-numeric-fraction: ;
-  --tw-ring-inset: ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / .5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur: ;
-  --tw-brightness: ;
-  --tw-contrast: ;
-  --tw-grayscale: ;
-  --tw-hue-rotate: ;
-  --tw-invert: ;
-  --tw-saturate: ;
-  --tw-sepia: ;
-  --tw-drop-shadow: ;
-  --tw-backdrop-blur: ;
-  --tw-backdrop-brightness: ;
-  --tw-backdrop-contrast: ;
-  --tw-backdrop-grayscale: ;
-  --tw-backdrop-hue-rotate: ;
-  --tw-backdrop-invert: ;
-  --tw-backdrop-opacity: ;
-  --tw-backdrop-saturate: ;
-  --tw-backdrop-sepia: ;
-  box-sizing: border-box;
-  border-width: 0;
+  /*Mi nombre*/
+#top-section-container {
+  align-items:center;
+  background-color: rgb(var(--light-background-color));
+  border-color: rgb(var(--accent-color-1));
+  border-radius: 10px;
   border-style: solid;
-  border-color: #e5e7eb;
+  border-width: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 2rem;
+  position: relative;
 }
 
-body {
-  line-height: inherit;
+#top-section-container::before {
+  background: linear-gradient(to right, rgb(var(--accent-color-1)/100%) 0, rgb(var(--accent-color-1)/15%) 70%, rgb(var(--accent-color-1)/9%) 92%, rgb(var(--accent-color-1)/0));
+  content: "";
+  height: 20rem;
+  left: -110px;
+  opacity: .7;
+  position: absolute;
+  top: -100px;
+  transform: rotate(45deg);
+  width: 10rem;
+}
+
+#top-section-text-container {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+@media screen and (min-width: 46em) {
+  #top-section-text-container > div {
+    width:50%;
+  }
+}
+
+h1 {
+  color: rgb(var(--heading-color-1));
+  font-size: clamp(2.5rem, 4vw + 1.2rem, 3rem);
+  font-weight: 800;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Rubik Variable, system-ui, sans-serif;
+}
+
+.title-highlight {
+  color: rgb(var(--accent-color-1));
+  font-weight: 800;
+  text-shadow: 2px 2px 6px rgb(var(--accent-color-1)/70%);
+}
+
+div.subheading {
+  color: rgb(var(--heading-color-2));
+  font-family: Red Hat Display Variable, system-ui, sans-serif;/*Cambila la letra*/
+  font-size: clamp(1.625rem, 3vw + .65rem, 2rem);
+  font-weight: 600;
+  margin: 0;
+}
+
+/*Mi foto*/
+#person-picture-container {
+  display: flex;
+  flex-grow: 1;
+}
+
+#person-picture {
+  border-color: rgb(var(--accent-color-1));
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  height: 200px;
+  width: 200px;
+}
+
+:root {
+  --accent-color-1: 255 255 102; 
+  --light-background-color: 25 27 32;
+  --heading-color-1: 247 247 255;
+  --heading-color-2: 230 230 230;
 }
 
 html {
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  -moz-tab-size: 4;
-  tab-size: 4;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
-  font-feature-settings: normal;
-  font-variation-settings: normal;
+  font-family: Noto Sans, system-ui, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: inherit;
+:root {
+  --base-color: 255 255 255;
+  --accent-color-1: 255 255 102;
+  --background-color: 0 0 0;
+  --light-background-color: 25 27 32;
+  --text-color: 247 247 255;
+  --heading-color-1: 247 247 255;
+  --heading-color-2: 230 230 230;
 }
-
-/* Estilos de tipografía */
-.text-sixth {
-  --tw-text-opacity: 1;
-  color: rgb(220 220 220 / var(--tw-text-opacity));
-}
-
-.font-roboto {
-  font-family: Roboto, sans-serif;
-}
-
-.bg-sec {
-  --tw-bg-opacity: 1;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-center {
-  text-align: center;
-}
-
-/* Estilos de diseño */
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.grid {
-  display: grid;
-}
-
-.place-items-center {
-  place-items: center;
-}
-
-/* Estilos de padding */
-.p-1 {
-  padding: .25rem;
-}
-
-.p-2 {
-  padding: .5rem;
-}
-
-/* Estilos de border */
-.border-tert {
-  --tw-border-opacity: 1;
-  border-color: rgb(58 58 58 / var(--tw-border-opacity));
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-/* Estilos de border-radius */
-.rounded {
-  border-radius: .25rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
-}
-
-/* Estilos de tamaño */
-.w-14 {
-  width: 3.5rem;
-}
-
-.h-14 {
-  height: 3.5rem;
-}
-
-.w-72 {
-  width: 18rem;
-}
-
-.h-72 {
-  height: 18rem;
-}
-
-/* Estilos específicos para medios */
-img, svg, video, canvas, audio, iframe, embed, object {
-  display: block;
-  vertical-align: middle;
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-/* Transiciones */
-.duration-150 {
-  transition-duration: .15s;
+html {
+  font-family: Noto Sans,system-ui,sans-serif;
 }
