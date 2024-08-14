@@ -1,6 +1,6 @@
 /*Cabezera*/
 .contenedor {
-    background-image: url(img/fondoNeo.jpg);
+    background-image: url(img/keyboard-7913431_1280.jpg);
     text-align: center;
     background-position: center center;
     background-repeat: no-repeat;
@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title-highlight {
   color: rgb(var(--accent-color-1));
-  font-weight: 800;
+  font-weight: 700;
   text-shadow: 2px 2px 6px rgb(var(--accent-color-1)/70%);
 }
 
@@ -312,4 +312,14 @@ html {
 }
 html {
   font-family: Noto Sans,system-ui,sans-serif;
+}
+/*colores para letras de presentacion*/
+.desarrollador {
+  color: rgb(144, 238, 144); /* Verde claro */
+  font-size: 150%;
+}
+
+.descripcion {
+  color: rgb(255, 105, 180); /* Rosa claro */
+  font-family: monospace;
 }
