@@ -327,20 +327,10 @@ html {
 
 /*Adornado para contacto*/
 .gap-4 {
-  gap: 1rem;
+  gap: 2rem;
 }
 .flex {
   display: flex;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-menu, ol, ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 *, ::after, ::before {
@@ -352,17 +342,10 @@ menu, ol, ul {
   --tw-bg-opacity: 1;
 }
 
-
-
 body {
   font-family: Onest Variable, sans-serif;
   line-height: inherit;
 }
-
-elemento {
-  color-scheme: dark;
-}
-
 :host, html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -377,14 +360,14 @@ elemento {
 
 @media (min-width: 760px) {
   .md\:size-6 {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 5rem;
+    height: 5rem;
   }
 }
 
 .size-4 {
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 
@@ -399,7 +382,7 @@ a {
 }
 
 .text-xs {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 3rem;
 }
 
