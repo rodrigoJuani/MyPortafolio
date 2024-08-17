@@ -370,12 +370,6 @@ body {
   height: 2rem;
 }
 
-
-:is(.dark .dark\:text-dark-200) {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
 a {
   color: white;
   text-decoration:solid;
