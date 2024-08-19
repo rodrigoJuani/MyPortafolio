@@ -334,12 +334,12 @@ html {
 }
 .colores{
     
-  background-color: rgb(12, 0, 0);
+  background-color: rgb(247, 246, 246);
   border-radius: 2rem;
 
 }
 .contac {
-  background-color: rgb(235, 239, 243); /* Color de fondo amarillo */
+  background-color: rgb(18, 39, 198); /* Color de fondo amarillo */
   padding: 20px 0; /* Espacio arriba y abajo, ajusta los valores según sea necesario */
 }
 
@@ -381,7 +381,7 @@ body {
 }
 /*contacto color*/
 a {
-  color: rgb(248, 246, 245);
+  color: rgb(8, 3, 0);
   text-decoration:solid;
 }
 
