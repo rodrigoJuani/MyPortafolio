@@ -5,7 +5,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fafdfd;
+    color: #eff3f3;
     padding: 50px;
 }
 /*Estilos para mostrar proyectos*/
@@ -52,8 +52,9 @@ body {
     padding: 58px 0px 16px;
   }
 
-  h1, h2, h3, h4, h5, h6, button {
+  h1, h2, h3, button {
     font-family: Space Grotesk, sans-serif;
+    color: #eff3f3;
   }
 
   .ceOSe {
@@ -67,7 +68,7 @@ body {
   /*primer proyect*/
   .bhtXlo {
     border-radius: 10px;
-    box-shadow: rgba(80, 78, 78, 0.5) 3px 3px 20px;
+    box-shadow: rgba(247, 244, 244, 0.986) 3px 3px 20px;
     text-align: center;
     width: 400px;
   }
@@ -179,7 +180,7 @@ body {
     margin: 0 0 15px;
   }
   
-  .h3, h3 {
+   h3 {
     font-size: 1.75rem;
   }
   
@@ -250,14 +251,7 @@ body {
   }
 }
 
-h1 {
-  color: rgb(var(--heading-color-1));
-  font-size: clamp(2.5rem, 4vw + 1.2rem, 3rem);
-  font-weight: 800;
-  margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: Rubik Variable, system-ui, sans-serif;
 }
 
