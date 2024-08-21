@@ -349,13 +349,13 @@ html {
 
 }
 .contac {
-  background-color: rgb(18, 39, 198); /* Color de fondo amarillo */
+  background-color: rgb(183, 10, 10); /* Color de fondo amarillo */
   padding: 20px 0; /* Espacio arriba y abajo, ajusta los valores según sea necesario */
 }
 
 *, ::after, ::before {
   box-sizing: border-box;
-  border: 0 solid #020200;
+  border: 0 solid #f1f1eb;
 }
 
 :is(.dark .dark\:bg-dark-950) {
