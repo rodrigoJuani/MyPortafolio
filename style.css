@@ -229,7 +229,10 @@ h1, h2, h3 {
   color: rgb(255, 105, 180); /* Rosa claro */
   font-family: monospace;
 }
-
+.descri {
+  color: rgb(251, 247, 249); 
+  font-family: monospace;
+}
 /*Estilos para el contacto*/
 .gap-4 {
   gap: 2rem;
