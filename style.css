@@ -299,3 +299,15 @@ a {
 .items-center {
   align-items: center;
 }
+/*Nueva idea de Skills*/
+.circular-progress{
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  margin: auto;
+  background: linear-gradient(
+    0deg,
+    #fff,
+    rgba(#fff,.2)50%
+  );
+}
