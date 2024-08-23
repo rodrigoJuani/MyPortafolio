@@ -307,7 +307,20 @@ a {
   margin: auto;
   background: linear-gradient(
     0deg,
-    #fff,
-    rgba(#fff,.2)50%
+    #04d2f6,
+    rgba(#fcfc03,.2)50%
   );
+  &::before{
+    content: "";
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red content-box;    
+    border-radius: 50%;
+    padding: .5em;
+    box-sizing: border-box;
+    font-size: 12rem;
+  }
 }
