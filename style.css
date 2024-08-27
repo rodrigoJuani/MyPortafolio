@@ -361,3 +361,8 @@ a {
   transform: scale(1.1) rotate(-90deg);/*para rotar*/
   line-height: 14rem;
 }
+/*Funcion para calcular la rotacion*/
+@funtion progress($percent){
+  $deg:$percent/100*180;
+  @return #{$deg}deg;
+}
