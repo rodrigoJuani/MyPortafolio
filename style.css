@@ -366,3 +366,6 @@ a {
   $deg:$percent/100*180;
   @return #{$deg}deg;
 }
+@mixin circular-progress($percent,#skill,#color,#bgcolor){
+ $progress: progress($percent)
+}
