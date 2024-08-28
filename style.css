@@ -316,27 +316,20 @@ a {
     border-radius: 50%;
   }
   margin: auto;
-  background: linear-gradient(
-    0deg,
-    #2804f6 50%,
-    rgb(248, 248, 242) 50%
-  );
   position: relative;
   position: relative;
-  transform: rotate(90deg);
+  
   &::before,
   &::after{
   position: absolute;
   top: 0;
   left: 0;
-  color: #fff;
   text-align: center;
 }  
 }
 
 .circular-progress::before {
   content: "HTML5";
-  background: red content-box; 
 
   /*Idea para poner logo en vez de color unico*/
   /*
@@ -349,7 +342,7 @@ a {
   box-sizing: border-box;
   font-size: 2rem;
   line-height: 8rem;
-  transform: rotate(-90deg);/*para rotar*/
+  
 }
 
 .circular-progress::after {
@@ -366,6 +359,24 @@ a {
   $deg:$percent/100*180;
   @return #{$deg}deg;
 }
-@mixin circular-progress($percent,#skill,#color,#bgcolor){
- $progress: progress($percent)
+@mixin circular-progress($percent,$skill,$color,$bgcolor){
+ $progress: progress($percent);
+ transform: rotate($progress);
+  background: linear-gradient(
+    0deg,
+    $color 50%,
+    rgba($color,.2) 50%
+  );
+  &:before,
+  &:after{
+    color: $color;
+  }
+  &::before{
+    content:"#{$skill}";
+    background: $bgcolor content-box; 
+    transform: rotate(-#{$progress});/*para rotar*/
+  }
+  &:after{
+    content:"#{$percent}%";
+  }
 }
