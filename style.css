@@ -346,12 +346,6 @@ a {
 }
 
 .circular-progress::after {
-  content: "50%";
-  background: linear-gradient(
-    transparent 50%,
-    #111 50%   
-  );
-  transform: scale(1.1) rotate(-90deg);/*para rotar*/
   line-height: 14rem;
 }
 /*Funcion para calcular la rotacion*/
@@ -378,5 +372,11 @@ a {
   }
   &:after{
     content:"#{$percent}%";
+    background: linear-gradient(
+    transparent 50%,
+    $bgcolor 50%   
+  );
+  
+  transform: scale(1.1) rotate(-#{&progress});/*para rotar*/
   }
 }
