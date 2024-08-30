@@ -302,8 +302,8 @@ a {
 /*Nueva idea de Skills*/
 .progress-container {
   position: relative;
-  width: 12rem;
-  height: 12rem;
+  width: 15rem;
+  height: 15rem;
   margin: auto;
 }
 
@@ -337,27 +337,28 @@ a {
   padding: 0.5em;
   box-sizing: border-box;
   font-size: 2rem;
-  line-height: 8rem;
+  line-height: 24rem;/*pocentaje*/
   transform: rotate(-90deg);
+  
 }
 
 .circular-progress.html5::before {
- 
+  content: "27%";
   background-image: url('img/cssRedon.png');
 }
 
 .circular-progress.css3::before {
- 
+  content: "23%";
   background-image: url('img/cmasmasRedon.png');
 }
 
 .circular-progress.javascript::before {
- 
+  content: "24%";
   background-image: url('img/javacriptRedon.png');
 }
 
 .circular-progress::after {
-  content: "20%"; /* Cambia esto si quieres ajustar el porcentaje */
+  
   color: #eff3f3;
   transform: scale(1.1) rotate(-90deg);
   line-height: 25rem;
