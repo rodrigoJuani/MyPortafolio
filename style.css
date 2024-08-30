@@ -301,9 +301,11 @@ a {
 }
 /*Nueva idea de Skills*/
 .progress-container {
-  position: relative;
-  width: 15rem;
-  height: 15rem;
+  display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos en el contenedor */
+  gap: 2rem; /* Espacio entre los indicadores circulares */
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay espacio suficiente */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
   margin: auto;
 }
 
@@ -311,8 +313,7 @@ a {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  margin: auto;
-  background: linear-gradient(30deg, #2804f6 70%, rgb(248, 248, 242) 0%);
+  background: linear-gradient(30deg, #0489f6 70%, rgb(249, 249, 1) 0%);
   position: relative;
   transform: rotate(90deg);
 }
@@ -333,13 +334,11 @@ a {
   background-size: 90px 90px;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 50%;
   padding: 0.5em;
   box-sizing: border-box;
   font-size: 2rem;
-  line-height: 24rem;/*pocentaje*/
+  line-height: 25rem; /* Ajusta la alineación vertical del texto dentro del círculo */
   transform: rotate(-90deg);
-  
 }
 
 .circular-progress.html5::before {
@@ -358,9 +357,7 @@ a {
 }
 
 .circular-progress::after {
-  
   color: #eff3f3;
   transform: scale(1.1) rotate(-90deg);
-  line-height: 25rem;
+  line-height: 12rem;
 }
-
