@@ -320,7 +320,7 @@ a {
     rgb(249, 251, 251) 0%
   );
   position: relative;
-  transform: rotate(0deg);
+  transform: rotate(0deg); /* Mantener el fondo en su posición */
 }
 
 .circular-progress::before,
@@ -342,8 +342,8 @@ a {
   padding: 0.5em;
   box-sizing: border-box;
   font-size: 2rem;
-  line-height: 25rem;
-  transform: rotate(-90deg);
+  line-height: 12rem; /* Alineación vertical */
+  transform: rotate(0deg); /* Evita que la imagen gire */
 }
 
 .circular-progress.html5::before {
