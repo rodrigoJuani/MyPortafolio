@@ -303,7 +303,7 @@ a {
 .progress-container {
   display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
   justify-content: center; /* Centra los elementos en el contenedor */
-  gap: 2rem; /* Espacio entre los indicadores circulares */
+  gap: 5rem; /* Espacio entre los indicadores circulares */
   flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay espacio suficiente */
   width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
   margin: auto;
@@ -313,9 +313,14 @@ a {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  background: linear-gradient(30deg, #0489f6 70%, rgb(249, 249, 1) 0%);
+  background: conic-gradient(
+    from 270deg, 
+    #f60404 0%,
+    #f60404 calc(0.01% + var(--percent) * 1%), 
+    rgb(249, 251, 251) 0%
+  );
   position: relative;
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 .circular-progress::before,
@@ -337,7 +342,7 @@ a {
   padding: 0.5em;
   box-sizing: border-box;
   font-size: 2rem;
-  line-height: 25rem; /* Ajusta la alineación vertical del texto dentro del círculo */
+  line-height: 25rem;
   transform: rotate(-90deg);
 }
 
@@ -356,8 +361,11 @@ a {
   background-image: url('img/javacriptRedon.png');
 }
 
+/*
 .circular-progress::after {
   color: #eff3f3;
   transform: scale(1.1) rotate(-90deg);
   line-height: 12rem;
 }
+  */
+  
