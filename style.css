@@ -353,6 +353,7 @@ a {
 
 .circular-progress.css3::before {
   content: "23%";
+  
   background-image: url('img/cmasmasRedon.png');
 }
 
