@@ -317,7 +317,7 @@ a {
     from 270deg, 
     #f60404 0%,
     #f60404 calc(0.01% + var(--percent) * 1%), 
-    rgb(249, 251, 251) 0%
+    rgb(99, 255, 255) 0%
   );
   position: relative;
   transform: rotate(0deg); /* Mantener el fondo en su posición */
@@ -341,8 +341,8 @@ a {
   background-repeat: no-repeat;
   padding: 0.5em;
   box-sizing: border-box;
-  font-size: 2rem;
-  line-height: 12rem; /* Alineación vertical */
+  font-size: 3rem;
+  line-height: 24rem; /* Alineación vertical */
   transform: rotate(0deg); /* Evita que la imagen gire */
 }
 
@@ -366,7 +366,7 @@ a {
 .circular-progress::after {
   color: #eff3f3;
   transform: scale(1.1) rotate(-90deg);
-  line-height: 12rem;
+  line-height: 30rem;
 }
-  */
+ */ 
   
