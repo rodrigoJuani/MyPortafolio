@@ -358,6 +358,7 @@ a {
 
 .circular-progress.javascript::before {
   content: "12%";
-  background-image: url('img/javacriptRedon.png');
+  background-image: url('img/js.png');
 }
+
   
