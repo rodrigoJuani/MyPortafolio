@@ -347,26 +347,17 @@ a {
 }
 
 .circular-progress.html5::before {
-  content: "27%";
+  content: "52%";
+  background-size: 115px 115px;
+  background-image: url('img/htmlredon.png');
+}
+.circular-progress.css::before {
+  content: "53%";
   background-image: url('img/cssRedon.png');
 }
 
-.circular-progress.css3::before {
-  content: "23%";
-  
-  background-image: url('img/cmasmasRedon.png');
-}
-
 .circular-progress.javascript::before {
-  content: "24%";
+  content: "12%";
   background-image: url('img/javacriptRedon.png');
 }
-
-/*
-.circular-progress::after {
-  color: #eff3f3;
-  transform: scale(1.1) rotate(-90deg);
-  line-height: 30rem;
-}
- */ 
   
