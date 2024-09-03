@@ -361,4 +361,16 @@ a {
   background-image: url('img/js.png');
 }
 
-  
+.circular-progress.react::before {
+  content: "2%";
+  background-image: url('img/react.png');
+} 
+
+.circular-progress.cmasmas::before {
+  content: "55%";
+  background-image: url('img/c.png');
+}
+.circular-progress.java::before {
+  content: "55%";
+  background-image: url('img/java.png');
+}
