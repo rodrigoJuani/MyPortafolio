@@ -301,23 +301,22 @@ a {
 }
 /*Nueva idea de Skills*/
 .progress-container {
-  display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+  display: flex; 
   justify-content: center; /* Centra los elementos en el contenedor */
   gap: 5rem; /* Espacio entre los indicadores circulares */
-  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay espacio suficiente */
-  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  flex-wrap: wrap; 
+  width: 100%; 
   margin: auto;
 }
-
 .circular-progress {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
   background: conic-gradient(
-    from 270deg, 
-    #f60404 0%,
-    #f60404 calc(0.01% + var(--percent) * 1%), 
-    rgb(99, 255, 255) 0%
+    from 180deg, /* Ajustar el ángulo para que el inicio sea en la parte inferior */
+  
+    #f60404 calc(var(--percent) * 1%), 
+    rgb(4, 145, 246) 0%
   );
   position: relative;
   transform: rotate(0deg); /* Mantener el fondo en su posición */
