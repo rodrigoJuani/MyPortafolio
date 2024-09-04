@@ -303,7 +303,7 @@ a {
 .progress-container {
   display: flex; 
   justify-content: center; /* Centra los elementos en el contenedor */
-  gap: 5rem; /* Espacio entre los indicadores circulares */
+  gap: 7rem; /* Espacio entre los indicadores circulares */
   flex-wrap: wrap; 
   width: 100%; 
   margin: auto;
