@@ -370,6 +370,6 @@ a {
   background-image: url('img/c.png');
 }
 .circular-progress.java::before {
-  content: "55%";
+  content: "60%";
   background-image: url('img/java.png');
 }
