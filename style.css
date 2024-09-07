@@ -383,12 +383,12 @@ a {
   flex-direction: column;
   min-height: 100vh;
   background-color: #040303;
+  border-radius:27px ;
   gap:1rem;
   margin:2rem 5em;
 }
 .blockSkills{/*section*/
   flex: 4;
-  border: 2px solid red;
   border-radius:2rem ;
   display: flex;
   gap: 1em;
@@ -409,4 +409,10 @@ a {
   flex:1;
   background-color: #e4f802;
   border-radius: 2rem;
+}
+@media(max-width: 968px){
+  .blockSkills{
+    flex-direction: column;
+    margin: 1em 2 em;
+  }
 }
