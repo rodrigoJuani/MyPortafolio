@@ -412,6 +412,7 @@ a {
 }
 @media(max-width: 968px){
   .blockSkills{
+    display: flex;
     flex-direction: column;
     margin: 1em 2 em;
   }
