@@ -381,7 +381,7 @@ a {
 .separador{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 60vh;
   background-color: #040303;
   border-radius:27px ;
   gap:1rem;
@@ -415,5 +415,6 @@ a {
     display: flex;
     flex-direction: column;
     margin: 1em 2 em;
+    min-height: 130vh;
   }
 }
