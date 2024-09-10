@@ -374,7 +374,20 @@ a {
   content: "60%";
   background-image: url('img/java.png');
 }
+/*Herramientas*/
+.circular-progress.git::before {
+  content: "20%";
+  background-image: url('img/git.png');
+} 
 
+.circular-progress.github::before {
+  content: "20%";
+  background-image: url('img/github.png');
+}
+.circular-progress.vscode::before {
+  content: "40%";
+  background-image: url('img/vscode.png');
+}
 /*Separador de hab*/
 
 
