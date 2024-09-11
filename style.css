@@ -59,11 +59,12 @@ h1, h2, h3, button {
 
 /* Estilo de proyectos */
 .ceOSe {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  padding: 3rem;
-  place-items: center;
-  gap: 3rem 2rem;
+  display: flex;                /* Cambiamos a flexbox para mayor control de centrado */
+  flex-wrap: wrap;              /* Permite que las tarjetas se ajusten y se envuelvan */
+  justify-content: center;      /* Centra las tarjetas horizontalmente */
+  align-items: center;          /* Centra las tarjetas verticalmente */
+  padding: 10rem;
+  gap: 8rem 18rem;
 }
 
 .bhtXlo {
@@ -72,7 +73,6 @@ h1, h2, h3, button {
   text-align: center;
   width: 400px;
 }
-
 .jZGiZL,
 .img1,
 .img2 {
@@ -80,6 +80,7 @@ h1, h2, h3, button {
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+  
 }
 
 .img1 {
@@ -130,7 +131,7 @@ h1, h2, h3, button {
 .iWBlGv {
   color: rgb(212, 192, 192);
   font-size: 1.6rem;
-  padding: 1.2rem 1.5rem;
+  padding: 1.2rem 1.6rem;
   background: rgb(107, 48, 48);
   border-radius: 16px;
   
@@ -408,19 +409,19 @@ a {
 }
 .col-left{
   flex:1;
-  background-color: #04f2f6;
+  background-color: #2804f6;
   border-radius: 2em;
 }
 
 .col-centro{
   flex:1;
-  background-color: #f802b6;
+  background-color: #02f80a;
   border-radius: 2rem;
 }
 
 .col-right{
   flex:1;
-  background-color: #e4f802;
+  background-color: #b602f8;
   border-radius: 2rem;
 }
 @media(max-width: 968px){
