@@ -59,6 +59,7 @@ h1, h2, h3, button {
 
 /*Nueva idea de mostrar proyects*/
 /*centrado de cartas*/
+
 .ConteDenewIde {
   display: flex;
   justify-content: center; 
@@ -68,6 +69,11 @@ h1, h2, h3, button {
   padding: 0; /* Eliminar padding para reducir espacio */
   gap: 5px; /* Reducir el espacio entre las cartas */
   box-sizing: border-box;
+}
+.carta-container {
+  height: 300px; /* Ajusta la altura según sea necesario */
+  overflow: hidden; /* Oculta el contenido que exceda la altura */
+  margin-bottom: 20px; /* Espacio entre las cartas */
 }
 
 .carta {
