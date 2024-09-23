@@ -171,7 +171,8 @@ h1, h2, h3, button {
   justify-content: center;      /* Centra las tarjetas horizontalmente */
   align-items: center;          /* Centra las tarjetas verticalmente */
   padding: 10rem;
-  gap: 8rem 18rem;
+  gap: 8rem 18rem;             /* Espacio entre las cartas */
+  height: 100%;                 /* Asegura que el contenedor ocupe toda la altura disponible */
 }
 
 .bhtXlo {
@@ -179,8 +180,7 @@ h1, h2, h3, button {
   box-shadow: rgba(247, 244, 244, 0.986) 3px 3px 20px;
   text-align: center;
   width: 400px;
-}
-.jZGiZL,
+}.jZGiZL,
 .img1,
 .img2 {
   width: 100%;
