@@ -29,6 +29,37 @@ html {
   font-size: 62.5%;
   line-height: 1.15;
 }
+/*Letras de mi nombre(movimiento de teclado)*/
+.title-highlight {
+  display: inline-block;
+  overflow: hidden; /* Oculta el texto cuando aún no se ha mostrado completamente */
+  border-right: 3px solid black; /* Línea que simula el cursor de la máquina de escribir */
+  white-space: nowrap; /* Asegura que el texto no se envuelva en la siguiente línea */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Animación de escritura */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Parpadeo del cursor */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+.typewriter-text h1 {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline; /* Mantiene el texto en línea con el span */
+}
+
+.title-highlight {
+  color: #ff6347; /* Color destacado */
+}
+
 
 /*Título*/
 @media screen and (max-width: 768px) {
