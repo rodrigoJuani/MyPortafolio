@@ -417,17 +417,31 @@ ul {
 }
 
 #person-picture-container {
-  display: flex;
+  display:inline-block;
   flex-grow: 1;
 }
 
 #person-picture {
-  border-color: rgb(var(--accent-color-1));
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
   height: 200px;
   width: 200px;
+  border-color: rgb(var(--accent-color-1));
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+  animation: glowing-lights 2s infinite alternate ease-in-out;
+}
+
+@keyframes glowing-lights {
+  0% {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5), 0 0 30px 10px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.7), 0 0 45px 15px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5), 0 0 30px 10px rgba(255, 255, 255, 0.3);
+  }
 }
 
 :root {
