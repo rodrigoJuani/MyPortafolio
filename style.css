@@ -417,21 +417,26 @@ ul {
 }
 
 #person-picture-container {
-  display:inline-block;
+  display: inline-block;
   flex-grow: 1;
+  text-align: center; /* Centra la imagen */
+  width: 100%; /* Asegura que el contenedor use todo el ancho */
 }
 
 #person-picture {
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
-  height: 200px;
-  width: 200px;
+  width: 50vw; /* Usa el 50% del ancho del viewport */
+  max-width: 300px; /* Limita el tamaño máximo de la imagen */
+  min-width: 150px; /* Limita el tamaño mínimo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
   border-color: rgb(var(--accent-color-1));
   box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
   animation: glowing-lights 2s infinite alternate ease-in-out;
 }
 
+/* Anima las luces en los bordes de la imagen */
 @keyframes glowing-lights {
   0% {
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5), 0 0 30px 10px rgba(255, 255, 255, 0.3);
@@ -444,6 +449,20 @@ ul {
   }
 }
 
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  #person-picture {
+    width: 40vw; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
+  }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1200px) {
+  #person-picture {
+    width: 25vw; /* Reduce el tamaño de la imagen en pantallas más grandes */
+  }
+}
+<<*<Agregando funciones para aumentar img dependiendo de la pantalla
 :root {
   --accent-color-1: 255 255 102;
   --light-background-color: 25 27 32;
