@@ -49,20 +49,72 @@ html {
   from, to { border-color: transparent; }
   50% { border-color: black; }
 }
+/* Contenedor principal que ajusta el texto */
+.typewriter-container {
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-right: 20px; /* Añade un espacio a la derecha para evitar que el texto toque la imagen */
+}
 
+/* Mejora del estilo de la tipografía */
 .typewriter-text h1 {
   font-size: 24px;
   font-weight: bold;
-  display: inline; /* Mantiene el texto en línea con el span */
 }
-.typewriter-container .desarrollador {
-  font-family: 'Cursive', serif; /* Usa una fuente elegante */
-  font-size: 2rem; /* Ajusta el tamaño según lo necesites */
-  font-weight: bold; /* Hace que se vea más formal */
-  color: #05e4f4; /* Color oscuro para un tono elegante */
-  text-shadow: 1px 1px 2px rgba(252, 36, 36, 0.959); /* Añade una sombra suave */
-  letter-spacing: 2px; /* Añade espacio entre letras */
+
+.typewriter-text .title-highlight {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #05e4f4;
+  text-shadow: 1px 1px 2px rgba(252, 36, 36, 0.959);
 }
+
+.desarrollador {
+  font-family: 'Cursive', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f405b0;
+  text-shadow: 1px 1px 2px rgba(17, 2, 81, 0.959);
+  letter-spacing: 2px;
+}
+.subheading {
+  font-size: 1.5rem;
+}
+
+.descri {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Ajuste de layout para pantallas grandes */
+@media (min-width: 1200px) {
+  .typewriter-container {
+    max-width: 60%; /* Limita el ancho del texto para evitar que invada el área de la imagen */
+    float: left; /* Asegura que el texto se mantenga a la izquierda y la imagen a la derecha */
+  }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1200px) {
+  /* Mueve el texto a la derecha cuando la pantalla sea grande */
+  .typewriter-container {
+    text-align: right; /* Alinea el texto a la derecha */
+  }
+
+  /* Ajusta el tamaño del texto en pantallas grandes */
+  .typewriter-container .desarrollador {
+    font-size: 2.5rem; /* Aumenta el tamaño del texto en pantallas grandes */
+  }
+
+  .typewriter-container .subheading {
+    font-size: 1.8rem; /* Ajusta el tamaño de los subtítulos */
+  }
+
+  .typewriter-container .descri {
+    font-size: 1.2rem; /* Ajusta el tamaño del párrafo */
+  }
+}
+
 
 .title-highlight {
   color: #ff6347; /* Color destacado */
@@ -415,11 +467,10 @@ ul {
     padding: 20px;
   }
 }
-
 #person-picture-container {
   display: inline-block;
   flex-grow: 1;
-  text-align: center; /* Centra la imagen */
+  text-align: center; /* Centra la imagen en pantallas pequeñas por defecto */
   width: 100%; /* Asegura que el contenedor use todo el ancho */
 }
 
@@ -452,17 +503,22 @@ ul {
 /* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
   #person-picture {
-    width: 40vw; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
+    width: 40vw; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
   }
 }
 
 /* Media query para pantallas grandes */
 @media (min-width: 1200px) {
+  #person-picture-container {
+    text-align: right; /* Alinea la imagen a la derecha en pantallas grandes */
+  }
+
   #person-picture {
-    width: 25vw; /* Reduce el tamaño de la imagen en pantallas más grandes */
+    width: 25vw; /* Ajusta el tamaño de la imagen en pantallas grandes */
   }
 }
-<<*<Agregando funciones para aumentar img dependiendo de la pantalla
+
+
 :root {
   --accent-color-1: 255 255 102;
   --light-background-color: 25 27 32;
