@@ -89,37 +89,46 @@ html {
 
 
 /* Para pantallas grandes */
+/* Para pantallas grandes */
 @media (min-width: 1200px) {
+  .typewriter-text h1 {
+    font-size: 5rem; /* Tamaño más grande para el título */
+  }
+
+  .typewriter-text .title-highlight {
+    font-size: 5rem; /* Tamaño más grande para el texto destacado */
+  }
+
+  .desarrollador {
+    font-size: 4rem; /* Aumenta el tamaño del texto "Desarrollador principiante" */
+  }
+
+  .subheading {
+    font-size: 3rem; /* Ajusta el tamaño del subtítulo */
+  }
+
+  .descri {
+    font-size: 4rem; /* Aumenta el tamaño del texto descriptivo */
+  }
+
   #TEXT-container {
     flex-direction: row; /* Organización horizontal: texto a la izquierda, imagen a la derecha */
     align-items: center;
     justify-content: space-between;
     text-align: left;
     height: 100vh; /* Ocupa toda la altura de la pantalla */
-    right: 900px;
-    
-  }
-
-  #TEXT {
-    max-width: 100%; /* Ajusta el ancho del texto */
+    padding-right: 40px; /* Añade espacio a la derecha para evitar que la imagen toque el borde */
   }
 
   #person-picture-container {
     margin-left: 50px;
-    margin-right: 65px;
     max-width: 40%; /* Imagen ocupa 40% del ancho */
   }
 
   #person-picture {
     width: 100%;
-    right: 90px;
     max-width: 500px; /* Tamaño más grande para la imagen */
   }
-}
-
-
-.title-highlight {
-  color: #ff6347; /* Color destacado */
 }
 
 /*Título*/
