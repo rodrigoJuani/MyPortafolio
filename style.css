@@ -86,32 +86,34 @@ html {
   color: #333;
 }
 
-/* Ajuste de layout para pantallas grandes */
+
+
+/* Para pantallas grandes */
 @media (min-width: 1200px) {
-  .typewriter-container {
-    max-width: 60%; /* Limita el ancho del texto para evitar que invada el área de la imagen */
-    float: left; /* Asegura que el texto se mantenga a la izquierda y la imagen a la derecha */
-  }
-}
-
-/* Media query para pantallas grandes */
-@media (min-width: 1200px) {
-  /* Mueve el texto a la derecha cuando la pantalla sea grande */
-  .typewriter-container {
-    text-align: right; /* Alinea el texto a la derecha */
+  #TEXT-container {
+    flex-direction: row; /* Organización horizontal: texto a la izquierda, imagen a la derecha */
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    right: 900px;
+    
   }
 
-  /* Ajusta el tamaño del texto en pantallas grandes */
-  .typewriter-container .desarrollador {
-    font-size: 2.5rem; /* Aumenta el tamaño del texto en pantallas grandes */
+  #TEXT {
+    max-width: 100%; /* Ajusta el ancho del texto */
   }
 
-  .typewriter-container .subheading {
-    font-size: 1.8rem; /* Ajusta el tamaño de los subtítulos */
+  #person-picture-container {
+    margin-left: 50px;
+    margin-right: 65px;
+    max-width: 40%; /* Imagen ocupa 40% del ancho */
   }
 
-  .typewriter-container .descri {
-    font-size: 1.2rem; /* Ajusta el tamaño del párrafo */
+  #person-picture {
+    width: 100%;
+    right: 90px;
+    max-width: 500px; /* Tamaño más grande para la imagen */
   }
 }
 
@@ -119,7 +121,6 @@ html {
 .title-highlight {
   color: #ff6347; /* Color destacado */
 }
-
 
 /*Título*/
 @media screen and (max-width: 768px) {
