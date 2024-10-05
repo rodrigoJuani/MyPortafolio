@@ -89,8 +89,10 @@ html {
 
 
 /* Para pantallas grandes */
-/* Para pantallas grandes */
 @media (min-width: 1200px) {
+  .typewriter-container {
+    width: 600px;
+  }
   .typewriter-text h1 {
     font-size: 5rem; /* Tamaño más grande para el título */
   }
@@ -111,18 +113,19 @@ html {
     font-size: 4rem; /* Aumenta el tamaño del texto descriptivo */
   }
 
-  #TEXT-container {
+  .TEXT {
+    display: flex;
     flex-direction: row; /* Organización horizontal: texto a la izquierda, imagen a la derecha */
     align-items: center;
     justify-content: space-between;
     text-align: left;
     height: 100vh; /* Ocupa toda la altura de la pantalla */
+    margin-left: -90px;
     padding-right: 40px; /* Añade espacio a la derecha para evitar que la imagen toque el borde */
   }
-
   #person-picture-container {
     margin-left: 50px;
-    max-width: 40%; /* Imagen ocupa 40% del ancho */
+    max-width: 40%; /* Imagen ocupa 30% del ancho */
   }
 
   #person-picture {
@@ -379,11 +382,10 @@ a {
 #top-section-text-container {
   align-items: center;
   display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  flex-basis: 50%;
+  flex-grow: 10;
+  justify-content:center;
+  flex-basis: 40%;
 }
-
 @media screen and (min-width: 46em) {
   #top-section-text-container > div {
       width: 50%;
@@ -409,7 +411,7 @@ h1, h2, h3 {
 }
 
 #top-section-text-container {
-  max-width: 1200px;
+  max-width: 1900px;
   margin: 0 auto;
 }
 
