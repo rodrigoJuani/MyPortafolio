@@ -110,9 +110,8 @@ html {
   }
 
   .descri {
-    font-size: 4rem; /* Aumenta el tamaño del texto descriptivo */
+    font-size: 3rem; /* Aumenta el tamaño del texto descriptivo */
   }
-
   .TEXT {
     display: flex;
     flex-direction: row; /* Organización horizontal: texto a la izquierda, imagen a la derecha */
