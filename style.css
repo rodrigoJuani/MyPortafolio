@@ -110,17 +110,15 @@ html {
   }
 
   .descri {
-    font-size: 3rem; /* Aumenta el tamaño del texto descriptivo */
+    font-size: 2.5rem; /* Aumenta el tamaño del texto descriptivo */
   }
   .TEXT {
     display: flex;
     flex-direction: row; /* Organización horizontal: texto a la izquierda, imagen a la derecha */
     align-items: center;
     justify-content: space-between;
-    text-align: left;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    margin-left: -90px;
-    padding-right: 40px; /* Añade espacio a la derecha para evitar que la imagen toque el borde */
+    text-align: left ;
+    padding-right: 90px; /* Añade espacio a la derecha para evitar que la imagen toque el borde */
   }
   #person-picture-container {
     margin-left: 50px;
